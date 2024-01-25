@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  # Contenedor Python
+  python-app:
+    build:
+      context: .
+      dockerfile: dockerfile-python
+    container_name: python_cnt
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql-db
+    volumes:
+      - ./:/app 
+
+  # Contenedor MySQL
+  mysql-db:
+    build:
+      context: .
+      dockerfile: dockerfile-mysql
+    container_name: mysql_cnt
+    ports:
+      - "3306:3306"  
+    environment:
+      MYSQL_ROOT_PASSWORD: mbit
+      MYSQL_DATABASE: Pictures
+      MYSQL_USER: mbit
+      MYSQL_PASSWORD: mbit
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
