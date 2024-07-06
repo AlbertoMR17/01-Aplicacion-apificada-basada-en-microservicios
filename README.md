@@ -25,7 +25,7 @@ Existen los siguientes microservicios:
 - **Base de datos:** Base de datos MySQL 8.0.
 - **API:** implementada en Flask y servida mediante waitress.
 
-<img src="https://raw.githubusercontent.com/AlbertoMR17/01-Aplicacion-apificada-basada-en-microservicios/main/diagram.png" width="2000px" style="float: right; margin-left: 100px; margin-bottom: 100px;">
+<img src="https://raw.githubusercontent.com/AlbertoMR17/01-Aplicacion-apificada-basada-en-microservicios/main/01_diagram.png" width="2000px" style="float: right; margin-left: 100px; margin-bottom: 100px;">
 
 ## <font color="#2a3f3f" size=4>Base de datos</font>
 
